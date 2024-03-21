@@ -1,0 +1,13 @@
+version: "3.8"
+name: go-cli-management
+services:
+  batch:
+    container_name: batch
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: dev
+    working_dir: /batch
+    volumes:
+      - .:/batch
+    tty: true
