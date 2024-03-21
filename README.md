@@ -174,7 +174,7 @@ Run の部分に処理を記載していきますが、Run だとエラーの検
 RunE: func(cmd *cobra.Command, args []string) error {
     // デフォルトフラグ
 	dryRun, _ := rootCmd.Flags().GetBool("dry-run")
-    concurrency, _ := rootCmd.Flags().GetUint("concurrency")
+	concurrency, _ := rootCmd.Flags().GetUint("concurrency")
 	waitTime, _ := rootCmd.Flags().GetUint("wait-time")
 
 	// サブコマンド固有フラグ
